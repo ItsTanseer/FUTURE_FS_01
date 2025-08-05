@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modern Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Tanseer</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skillLevel">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education-section">Education</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <h1>Hi!</h1>
+    <p>I'm Tanseer.</p>
+    <button class="cta-btn" onclick="document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' })">Contact me</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about video-section">
+    <video autoplay muted loop playsinline>
+      <source src="Bg.mp4" type="video/mp4">
+    </video>
+    <div class="about-content">
+      <img src="Me.jpg" alt="About Image" class="about-img">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>Hey! I’m a second-year IT student with a passion for expanding my skillset and exploring new domains. I’m currently diving deep into Data Structures and Algorithms using Java, while taking on Web Development as my creative side quest. Along the way, I’ve also picked up a solid foundation in Machine Learning — somewhere between basic and intermediate, and always leveling up..</p>
+
+      </div>
+    </div>
+  </section>
+  <section id="skillLevel">
+    <h3 class = "skillsheader">Skills</h3>
+    <div class="skillIntro">
+      <p>
+        Attended DSA and ML bootcamp conducted by ISTE Manipal during summer vacation to diversify my skills. I learned
+        important DSA algorithms and data structures and their uses and started leetcoding.
+      </p>
+
+    </div>
+    <div class="skillbar">
+      <div class="SkillsGrid">
+        <div class="skillcard">
+          <h3>HTML: </h3>
+          <p>Intermediate</p>
+        </div>
+        <div class="skillcard">
+          <h3> CSS: </h3>
+          <p>Beginner-Intermediate</p>
+        </div>
+        <div class="skillcard">
+          <h3>Java: </h3>
+          <p>Intermediate-Advanced</p>
+        </div>
+        <div class="skillcard">
+          <h3>Blender: </h3>
+          <p>Intermediate</p>
+        </div>
+
+        <div class="skillcard">
+          <h3>C: </h3>
+          <p>Intermediate</p>
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!-- Services Section -->
+  <section id="projects" class="services">
+    <h2>My Projects</h2>
+    <div class="services-grid">
+      <div class="service-card hidden">
+        <h3>Valorant Maps guide</h3>
+        <p>A responsive and multi-pages website for the major maps of valorant for new players. Built using html and
+          bootsrap css</p>
+        <div class="exploreproject">
+          <button class="exploreBtn" onclick="window.open('https://github.com/ItsTanseer/MIST-WC-Tanseer', '_blank')">
+            Explore more
+          </button>
+        </div>
+      </div>
+      <div class="service-card hidden">
+        <h3>Graph visualiser for Trigonometric functions</h3>
+        <p>Built using Pytorch, matplotlib and numpy, visualise graph of trigonometric functions and their derivatives.
+        </p>
+        <div class="exploreproject">
+          <button class="exploreBtn"
+            onclick="window.open('https://github.com/ItsTanseer/Trigo-Functions-and-their-Derivatives-visualiser', '_blank')">
+            Explore more
+          </button>
+        </div>
+      </div>
+      <div class="service-card hidden">
+        <h3>Tic Tac Toe game</h3>
+        <p>A website where 2 players can play Tic Tac Toe.</p>
+        <div class="exploreproject">
+          <button class="exploreBtn" onclick="window.open('https://github.com/ItsTanseer', '_blank')">
+            Explore more
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="education-section">
+    <h3 class = "education-title">Education</h3>
+    <div class="education">
+       <div class="educard">
+      <img class="mitlogo" src="MIT loog.png" alt="MIT Manipal Logo">
+      <h4 class="college-name">Manipal Institute of Technology</h4>
+      <p class="duration">2024 – 2028</p>
+      <p class="degree">B.Tech in Information Technology</p>
+    </div>
+
+    <div class="educard">
+      <img class="mitlogo" src="unnamed.png" alt="MIT Manipal Logo">
+      <h4 class="college-name">Loyola High School</h4>
+      <p class="duration">2022-2024</p>
+      <p class="degree">PCM</p>
+    </div>
+
+    </div>
+   
+
+  </section>
+  <h3 class="line"></h3>
+  <section id = "contact-section">
+    
+      
+   
+    <div class="contactcard">
+      <h4>Contact Me</h4>
+       <p>📞 970956XXXX</p>
+       <p>📨tanseer.ahmad.2007@gmail.com</p>
+       <p>🏡Justice Lane, Phulwarisharif, Patna</p>
+       
+
+    </div>
+    
+
+    <div class="contactcard">
+      <h4>Follow Me</h4>
+       <p><img src="instalogo.jpg" width="20px%", height="auto"> 
+        <a href="https://www.instagram.com/_tanseer_ahmad_/?hl=en">Instagram</a>  
+      </p>
+        <p><img src = "linkedn logo.png" width="20px", height="auto" style="margin-top: 4px;">
+          <a href="https://www.linkedin.com/in/tanseer-ahmad-a5a01831b/ ">LinkedIn</a>
+        </p>
+       
+       
+
+    </div>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
