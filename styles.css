@@ -15,28 +15,40 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 20px 10%;
-  background: #111;
-  color: #fff;
+  align-items: center;
+  background-color: var(--dark-bg);
+  padding: 1rem 5%;
   position: sticky;
   top: 0;
   z-index: 100;
+  /* box-shadow: 0 2px 8px rgba(0,0,0,0.4); */
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
 
-.nav-links a {
-  text-decoration: none;
-  color: white;
-  transition: color 0.3s;
-}
+ 
+  
 
 .nav-links a:hover {
   color: #f39c12;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem; /* spacing between links */
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 8px 12px; /* breathing room */
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #f39c12;
+  background-color: rgba(243, 156, 18, 0.1);
+  border-radius: 6px;
 }
 
 .hero {
@@ -47,7 +59,7 @@ body {
   align-items:flex-start;
   background: url('hero-bg.jpg') center/cover no-repeat;
   color: rgb(197, 132, 52);
-  margin-left: 20vh;
+  margin-left: 10%;
   font-size: 4vh;
   padding: 20px;
 }
@@ -66,27 +78,47 @@ body {
 .cta-btn:hover {
   background: #d35400;
 }
-
+/* .logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fefdfb;
+  letter-spacing: 1px;
+  cursor: pointer;
+} */
 .hamburger {
   display: none;
-  font-size: 24px;
+  font-size: 28px;
   cursor: pointer;
+  color: white;
 }
 
 @media (max-width: 768px) {
-  .nav-links {
+  .hamburger {
+    display: block;
+  }
+   .nav-links {
     display: none;
     flex-direction: column;
-    background: #222;
+    background: #111;
     position: absolute;
     top: 60px;
     right: 10%;
     width: 200px;
+    padding: 15px 0;
+    border-radius: 8px;
   }
+    .nav-links.show {
+    display: flex;
+  }
+  
+  
+.nav-links li a {
+  text-decoration: none;
+  color: var(--gold);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
 
-  .hamburger {
-    display: block;
-  }
 }
 
 .about {
